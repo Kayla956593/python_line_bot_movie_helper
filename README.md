@@ -17,7 +17,8 @@ The bot integrates movie ratings, upcoming releases, and local theater listings,
 
 | Movie Info | Weather Info | Box Office | Categories |
 |------------|--------------|------------|------------|
-| ![Movie Info](c6f2e405-9a67-444c-a6ed-90799edad0df.png) | ![Weather Info](6f8d9006-cb6d-492e-9984-e729dcc06738.png) | ![Box Office](2b99d7cc-b5a5-4f0d-ab0b-4e056f64c7e3.png) | ![Categories](2b944014-0829-4615-84e5-b06762640834.png) |
+| ![Uploading image.png…]()
+ | ![Weather Info](6f8d9006-cb6d-492e-9984-e729dcc06738.png) | ![Box Office](2b99d7cc-b5a5-4f0d-ab0b-4e056f64c7e3.png) | ![Categories](2b944014-0829-4615-84e5-b06762640834.png) |
 
 ## 🚀 How It Works
 
