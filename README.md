@@ -1,18 +1,31 @@
 
-# 🎬 Movie Assistant Bot
+# 🎬 Movie Assistant Bot (AWS Lambda)
 
-A LINE chatbot that provides movie recommendations, showtimes, weather updates, and more!  
-The bot integrates movie ratings, upcoming releases, and local theater listings, making it easy for users to plan their next cinema trip.
+A LINE chatbot deployed on **AWS Lambda + API Gateway**, built with **Python + Flask + line-bot-sdk**.  
+It fetches movie info (posters, ratings, box office, categories) and local weather so users can quickly plan a cinema trip.
 
-## 📌 Features
+---
 
-- **🎥 Movie Search**: Search for movies by title and view posters, ratings, and release dates.
-- **📅 Upcoming Movies**: See what’s coming to theaters soon.
-- **🏆 Box Office Rankings**: View current top movies in Taipei and beyond.
-- **🌦 Weather Info**: Check weather forecasts before heading to the cinema.
-- **🎯 Movie Categories**: Filter movies by genre such as Action, Adventure, Sci-Fi, Animation, and more.
-- **🎬 Detailed Info**: Access detailed ratings, satisfaction scores, and theater showtimes.
+## 🧱 Architecture
 
+```
+LINE Messaging API  →  API Gateway (HTTP API)  →  AWS Lambda (Python)
+                                        ↘︎ CloudWatch Logs
+```
+
+- **Flask** handles routing (e.g., `/webhook` for LINE events).
+- **serverless-wsgi** adapts Flask to Lambda.
+- **API Gateway** exposes a public HTTPS endpoint for the LINE webhook.
+
+---
+
+## ✨ Features
+
+- Movie search by title with posters, release date, and ratings
+- Taipei/Global box office rankings
+- Movie categories & upcoming releases
+- Local weather snapshots
+- Rich carousel/bubble messages (LINE Flex messages)
 ## 🖼 Screenshots
 
 | Movie Info | Weather Info | Box Office | Categories |
